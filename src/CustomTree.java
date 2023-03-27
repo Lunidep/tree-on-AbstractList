@@ -381,10 +381,9 @@ public class CustomTree extends AbstractList<String> implements Cloneable, Seria
     }
 
     /**
-     * This implementation iterates over this collection, checking each
-     * element returned by the iterator in turn to see if it's contained
-     * in the specified collection.  If it's not so contained, it's removed
-     * from this collection with the iterator's <tt>remove</tt> method.
+     * Эта реализация выполняет итерации по этой коллекции, проверяя каждый элемент, 
+     * возвращаемый итератором по очереди, чтобы проверить, содержится ли он в указанной коллекции. 
+     * Если это не так, то оно удаляется из этой коллекции с помощью метода итератора 
      *
      * @param c Коллекция элементы которой будут оставлены в текущей коллекции.
      * @return true если текущая коллекция подверглась изменению, иначе false
@@ -404,8 +403,8 @@ public class CustomTree extends AbstractList<String> implements Cloneable, Seria
     }
 
     /**
-     * This implementation iterates over the specified collection, and adds
-     * each object returned by the iterator to this collection, in turn.
+     * Эта реализация выполняет итерацию по указанной коллекции и добавляет 
+     * каждый объект, возвращаемый итератором в эту коллекцию, в свою очередь.метод.
      *
      * @param collection Элементы для добавления
      * @return true если коллекция изменилась
@@ -511,8 +510,8 @@ public class CustomTree extends AbstractList<String> implements Cloneable, Seria
     }
 
     /**
-     * Removes all of the elements from this list (optional operation).
-     * The list will be empty after this call returns.
+     * Удаляет все элементы из этого списка
+     * Список будет пуст после возврата этого вызова.
      */
     @Override
     public void clear() {
@@ -536,15 +535,7 @@ public class CustomTree extends AbstractList<String> implements Cloneable, Seria
 
 
     /**
-     * Creates and returns a copy of this object.  The precise meaning
-     * of "copy" may depend on the class of the object.
-     *
-     * @return a clone of this instance.
-     * @throws CloneNotSupportedException if the object's class does not
-     *                                    support the {@code Cloneable} interface. Subclasses
-     *                                    that override the {@code clone} method can also
-     *                                    throw this exception to indicate that an instance cannot
-     *                                    be cloned.
+     * @return возвращает копию этого объекта. 
      */
     @Override
     protected CustomTree clone() throws CloneNotSupportedException {
