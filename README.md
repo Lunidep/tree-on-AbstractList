@@ -12,10 +12,12 @@
 4) remove(Object o) - удаляет элемента дерева. Если в дереве присутствует несколько элементов с переданным именем - удаляет только первый найденный.
 Если переданный объект не является строкой, метод должен бросить UnsupportedOperationException.
 
-public String get(int index)
-public String set(int index, String element)
-public void add(int index, String element)
-public String remove(int index)
-public List<String> subList(int fromIndex, int toIndex)
-protected void removeRange(int fromIndex, int toIndex)
-public boolean addAll(int index, Collection<? extends String> c)
+Для удобства реализован итератьор по коллекции
+  
+1) public String get(int index)
+2) public String set(int index, String element)
+3) public void add(int index, String element)
+4) public String remove(int index)
+5) public List<String> subList(int fromIndex, int toIndex)
+6) protected void removeRange(int fromIndex, int toIndex)
+7) public boolean addAll(int index, Collection<? extends String> c)
